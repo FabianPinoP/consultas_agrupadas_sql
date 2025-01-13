@@ -5,7 +5,7 @@ SELECT AVG(precio_unitario) AS promedio_precio_unitario FROM ventas;
 
 -- ejercicio 2
 
-SELECT producto, COUNT(*) AS cantidad_vendida FROM ventas GROUP BY producto ORDER BY cantidad_vendida DESC LIMIT 1;
+SELECT producto, SUM(*) AS cantidad_vendida FROM ventas GROUP BY producto ORDER BY cantidad_vendida DESC LIMIT 1;
 
 -- ejercicio 3
 
